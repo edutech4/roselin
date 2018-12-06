@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>rose-ecommerce</title>
+	<!-- Standard -->
+	<link rel="shortcut icon" href="/images/ficon.png">
+	<!-- Latest Bootstrap min CSS -->
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css" type="text/css">
+	<!-- Dropdownhover CSS -->
+	<link rel="stylesheet" href="/stylesheets/bootstrap-dropdownhover.min.css" type="text/css">
+	<!-- latest fonts awesome -->
+	<link rel="stylesheet" href="/stylesheets/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- simple line fonts awesome -->
+	<link rel="stylesheet" href="/stylesheets/simple-line-icons.css" type="text/css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="/stylesheets/animate.min.css" type="text/css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+	<!--  baguetteBox -->
+	<link rel="stylesheet" href="/stylesheets/baguetteBox.css">
+	<!-- Owl Carousel Assets -->
+	<link href="/stylesheets/owl.carousel.css" rel="stylesheet">
+	<link href="/stylesheets/filter.css" rel="stylesheet">
+	<link href="/stylesheets/slider.css" rel="stylesheet">
+	<link href="/stylesheets/owl.theme.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	
+ 
+
+  </head>
+  <body>
+		{{> header}}
+    {{{body}}}
+
+  	{{> footer}}
+     
+		 <div id="content"></div>
+
+	 
+	 <script>
+$('#addcart').click(function (event) 
+{ 
+   event.preventDefault(); 
+
+   var url = $(this).attr('href');
+   $.get(url, function(data) {
+    
+    });
+
+ });
+</script>
+		
+
+  <script src="/javascript/no_refresh.js"></script>
+  <script src="/javascripts/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="/javascripts/bootstrap.min.js"></script>
+	<script src="/javascripts/bootstrap-dropdownhover.min.js"></script>
+	<!-- Plugin JavaScript -->
+	<script src="/javascripts/jquery.easing.min.js"></script>
+	<script src="/javascripts/wow.min.js"></script>
+	<!--  Custom Theme JavaScript  -->
+	<script src="/javascripts/custom.js"></script>
+	<!-- owl carousel -->
+	<script src="/javascripts/owl.carousel.js"></script>
+  </body>
+</html>
